@@ -47,6 +47,12 @@
       <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
       <Private>False</Private>
     </ProjectReference>
+    <ProjectReference Include="..\iOS\Contacts.iOS.csproj">
+      <Project>{F937E9BA-05BE-48EE-AB7E-AEA05EE2EC5E}</Project>
+      <Name>Contacts.iOS</Name>
+      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
+      <Private>False</Private>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

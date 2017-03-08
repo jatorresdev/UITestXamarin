@@ -38,6 +38,7 @@ namespace Contacts.UITests
 				// code if the app is not included in the solution.
 				//.AppBundle ("../../../iOS/bin/iPhoneSimulator/Debug/XamarinForms.iOS.app")
 				.InstalledApp("com.hjr.contactsapp")
+				.DeviceIdentifier("BD61C399-8945-4BB3-9E69-964415B1AC90")
 				.StartApp();
 		}
 	}

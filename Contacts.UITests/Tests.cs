@@ -29,7 +29,7 @@ namespace Contacts.UITests
 		public void AppLaunches()
 		{
 			app.Screenshot("First screen.");
-			//app.Repl();
+			app.Repl();
 		}
 
 		[Test]
