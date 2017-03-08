@@ -19,12 +19,14 @@
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+	<SkipValidatePackageReferences>true</SkipValidatePackageReferences>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <Optimize>true</Optimize>
     <OutputPath>bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+	<SkipValidatePackageReferences>true</SkipValidatePackageReferences>
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml" />

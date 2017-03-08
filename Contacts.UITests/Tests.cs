@@ -29,7 +29,22 @@ namespace Contacts.UITests
 		public void AppLaunches()
 		{
 			app.Screenshot("First screen.");
-			app.Repl();
+			//app.Repl();
+		}
+
+		[Test]
+		public void LoginWillSuccess()
+		{
+			app.EnterText(x => x.Marked("entUserName"), "Humberto Jaimes"); 
+			app.EnterText(x => x.Marked("entEmail"), "Humberto@humbertojaimes.net"); 
+			app.EnterText(x => x.Marked("entPassword"), "password");
+			app.Tap(x => x.Marked("btnLogin"));
+
+			app.WaitForNoElement(x => x.Marked("indIsBusy")); 
+			app.WaitForElement(x => x.Marked("Perfil"));
+
+			var profileElement = app.Query(x => x.Marked("Perfil")); 
+			Assert.IsTrue(profileElement.Any());
 		}
 	}
 }

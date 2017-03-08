@@ -41,6 +41,7 @@
     <AndroidManagedSymbols>true</AndroidManagedSymbols>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
     <AndroidSupportedAbis>armeabi-v7a;x86;armeabi;arm64-v8a;x86_64</AndroidSupportedAbis>
+	<SkipValidatePackageReferences>true</SkipValidatePackageReferences>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
